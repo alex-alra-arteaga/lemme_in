@@ -15,7 +15,7 @@ Assuming the graph has $n$ vertices, the time complexity to build such a matrix 
 
 To fill every value of the matrix we need to check if there is an edge between every pair $(v_{i}, v_{j})$ of vertices. The amount of such pairs of $n$ given vertices is $\binom{n}{2} = \frac{n \times (n - 1)}{2}$. That is why the time complexity of building the matrix is $O(n^2)$.
 
-The advantage of such representation is that we can check in $O(1)$ time if there exists an edge $e_{ij} = (v_{i}, v_{j})$ by simply checking the value at the $i^{th}$ row and $j^{th}$ column of our matrix.
+The advantage of such representation is that we can check in $O(1)$ time if there exists an edge $e_{ij} = (v_{i}, v_{j})$ by simply checking the value at the $i^{th}$ row and $j^{th}$ column of our matrix, otherwise, using a linkedlist, the query is much computationally expensive.
 
 
 <h2>Algorithm</h2>
